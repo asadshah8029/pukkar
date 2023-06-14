@@ -45,6 +45,8 @@ app.use("/api/post", PostRoutes);
 app.use("/api/student", StudentRoutes);
 
 // Listeners
+mongoose.set("strictQuery", true);
+
 mongoose.connect(
   "mongodb+srv://asadshah8029:asaddata@cluster0.iewxldf.mongodb.net/",
   { useNewUrlParser: true },
