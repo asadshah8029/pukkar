@@ -10,8 +10,8 @@ export const createStudent = async (req, res) => {
 
 export const getStudents = async (req, res) => {
   const students = await Student.find();
-  console.log(students);
-  return res.json(students);
+
+  res.json({ message: "students" });
 };
 
 export const getStudent = async (req, res) => {
