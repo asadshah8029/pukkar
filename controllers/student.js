@@ -11,7 +11,7 @@ export const createStudent = async (req, res) => {
 export const getStudents = async (req, res) => {
   const students = await Student.find();
 
-  res.json({ message: "students" });
+  res.json(students);
 };
 
 export const getStudent = async (req, res) => {
